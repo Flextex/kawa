@@ -9,7 +9,7 @@ $key = trim($_GET['key']);
 // Calculate link expiration time
 $currentTime = time();
 $keyTime = explode('-',$key);
-$expTime = strtotime(EXPIRATION_TIME, $keyTime[3]);
+$expTime = strtotime(EXPIRATION_TIME, $keyTime[0]);
 
 // Retrieve the keys from the tokens file
 $keys = file(TOKEN_DIR.'/keys');

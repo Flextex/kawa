@@ -1,13 +1,13 @@
 <?php
 // Array of the files with an unique ID
 $files = array(
-    'UID738368' => array(
+    'UID87978404' => array(
         'content_type' => 'application/zip', 
         'suggested_name' => 'codex-file.zip', 
         'file_path' => 'files/test.zip',
         'type' => 'local_file'
     ),
-    'UID67890' => array(
+    'UID75895795' => array(
         'content_type' => 'audio/mpeg', 
         'suggested_name' => 'music-codex.mp3', 
         'file_path' => 'https://dl.dropboxusercontent.com/s/9hio1a29f8zsf77/.mp3',
