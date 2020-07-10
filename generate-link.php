@@ -53,7 +53,7 @@ if($oauthPass != OAUTH_PASSWORD){
 <?php if(!empty($download_links)){ ?>
     <ul>
     <?php foreach($download_links as $download){ ?>            
-        <li><a href="<?php echo $download['link']; ?>"><?php echo  $download['link']; ?></a></li>
+        <li><a href="<?php echo $download['boton']; ?>"><?php echo  $download['boton']; ?></a></li>
     <?php } ?>
     </ul>
 <?php }else{ ?>
