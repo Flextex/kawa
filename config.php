@@ -25,7 +25,7 @@ define('DOWNLOAD_PATH', BASE_URL.'download-link.php');
 define('TOKEN_DIR', 'tokens');
 
 // Authentication password to generate download links
-define('OAUTH_PASSWORD','gmexsite');
+define('OAUTH_PASSWORD','NORP');
 
 // Expiration time of the link (examples: +1 year, +1 month, +5 days, +10 hours)
-define('EXPIRATION_TIME', '+1 year');
+define('EXPIRATION_TIME', '+24 hours');
