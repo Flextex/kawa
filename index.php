@@ -1,0 +1,1 @@
+<a href="generate.php?NOPROG">Generate download link</a>
