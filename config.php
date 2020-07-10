@@ -22,10 +22,10 @@ define('BASE_URL','http://'. $_SERVER['HTTP_HOST'].'/');
 define('DOWNLOAD_PATH', BASE_URL.'download-link.php');
 
 // Path of the token directory to store keys
-define('TOKEN_DIR', 'tokens');
+define('TOKEN_DIR', '56947840404');
 
 // Authentication password to generate download links
 define('OAUTH_PASSWORD','gmexsite');
 
 // Expiration time of the link (examples: +1 year, +1 month, +5 days, +10 hours)
-define('EXPIRATION_TIME', '+5 minutes');
+define('EXPIRATION_TIME', '+60 minutes');
