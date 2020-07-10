@@ -9,7 +9,7 @@ $key = trim($_GET['key']);
 // Calculate link expiration time
 $currentTime = time();
 $keyTime = explode('-',$key);
-$expTime = strtotime(EXPIRATION_TIME, $keyTime[0]);
+$expTime = strtotime(EXPIRATION_TIME, $keyTime[3]);
 
 // Retrieve the keys from the tokens file
 $keys = file(TOKEN_DIR.'/keys');
@@ -48,7 +48,7 @@ if($match !== false && $currentTime <= $expTime){
             header("Content-Disposition: attachment; filename=\"{$fileName}\"");
             header("Content-Length: " . filesize($filePath));
             header('Pragma: public');
-            header("Expires: 3");
+            header("Expires: 0");
             readfile($filePath);
         }
         exit;
