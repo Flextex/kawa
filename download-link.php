@@ -40,12 +40,12 @@ if($match !== false && $currentTime <= $expTime){
         if($files[$fid]['type'] == 'remote_file'){
             $file = fopen($filePath, 'r');
             header("Content-Type:text/plain");
-            header("Content-Disposition: attachment; filename="{$fileName}"");
+            header("Content-Disposition: attachment; filename=\"{$fileName}\"");
             fpassthru($file);
         }else{
             header("Content-Description: File Transfer");
             header("Content-type: {$contentType}");
-            header("Content-Disposition: attachment; filename="{$fileName}"");
+            header("Content-Disposition: attachment; filename=\"{$fileName}\"");
             header("Content-Length: " . filesize($filePath));
             header('Pragma: public');
             header("Expires: 0");

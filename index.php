@@ -1,1 +1,1 @@
-<a href="generate.php?NOPROG">Generate download link</a>
+<a href="generate-link.php?Tutorialswebsite">Generate download link</a>

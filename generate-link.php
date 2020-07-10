@@ -7,6 +7,7 @@ $oauthPass = trim($_SERVER['QUERY_STRING']);
 
 // Verify the oauth password
 if($oauthPass != OAUTH_PASSWORD){
+    echo "false";
     // Return 404 error, if not a correct path
     header("HTTP/1.0 404 Not Found");
     exit;
@@ -35,13 +36,13 @@ if($oauthPass != OAUTH_PASSWORD){
             if(!is_dir(TOKEN_DIR)) {
                 mkdir(TOKEN_DIR);
                 $file = fopen(TOKEN_DIR.'/.htaccess','w');
-                fwrite($file,"Order allow,denynDeny from all");
+                fwrite($file,"Order allow,deny\nDeny from all");
                 fclose($file);
             }
             
             // Write the key to the keys list
             $file = fopen(TOKEN_DIR.'/keys','a');
-            fwrite($file, "{$key}n");
+            fwrite($file, "{$key}\n");
             fclose($file);
         }
     }
