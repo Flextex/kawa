@@ -22,7 +22,7 @@ define('BASE_URL','http://'. $_SERVER['HTTP_HOST'].'/');
 define('DOWNLOAD_PATH', BASE_URL.'download-link.php');
 
 // Path of the token directory to store keys
-define('TOKEN_DIR', '84648595');
+define('TOKEN_DIR', 'tokens');
 
 // Authentication password to generate download links
 define('OAUTH_PASSWORD','gmexsite');
