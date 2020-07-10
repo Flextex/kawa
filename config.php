@@ -1,13 +1,18 @@
 <?php
 // Array of the files with an unique ID
 $files = array(
-    'FID12345' => array(
+    'UID738368' => array(
         'content_type' => 'application/zip', 
-        'suggested_name' => 'tutorials-file.zip', 
-        'file_path' => 'tempfile.zip',
+        'suggested_name' => 'codex-file.zip', 
+        'file_path' => 'files/test.zip',
         'type' => 'local_file'
-    )
-    
+    ),
+    'UID67890' => array(
+        'content_type' => 'audio/mpeg', 
+        'suggested_name' => 'music-codex.mp3', 
+        'file_path' => 'https://dl.dropboxusercontent.com/s/9hio1a29f8zsf77/.mp3',
+        'type' => 'remote_file'
+    ),
 );
 
 // Base URL of the application
@@ -23,4 +28,4 @@ define('TOKEN_DIR', 'tokens');
 define('OAUTH_PASSWORD','Tutorialswebsite');
 
 // Expiration time of the link (examples: +1 year, +1 month, +5 days, +10 hours)
-define('EXPIRATION_TIME', '+1 minutes');
+define('EXPIRATION_TIME', '+5 minutes');
