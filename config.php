@@ -28,4 +28,4 @@ define('TOKEN_DIR', 'tokens');
 define('OAUTH_PASSWORD','gmexsite');
 
 // Expiration time of the link (examples: +1 year, +1 month, +5 days, +10 hours)
-define('EXPIRATION_TIME', '+60 minutes');
+define('EXPIRATION_TIME', '+1 year');
