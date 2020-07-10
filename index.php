@@ -9,7 +9,7 @@
 <body>
 <!-- partial:index.partial.html -->
 <div class="vn-red" style="text-align: center;">
-<a href="generate-boton.php?gmexsite">DOWNLOAD</a>
+<a href="generate-link.php?gmexsite">DOWNLOAD</a>
 </div>
 <!-- partial -->
   
