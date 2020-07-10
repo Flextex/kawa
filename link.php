@@ -9,7 +9,7 @@
 <body>
 <!-- partial:index.partial.html -->
 <div class="vn-red" style="text-align: center;">
-<a href="#">DOWNLOAD</a>
+<a href="generate-link.php">DOWNLOAD</a>
 </div>
 <div class="vn-green" style="text-align: center;">
 <a href="#" class="btn-wrap">DOWNLOAD</a>
